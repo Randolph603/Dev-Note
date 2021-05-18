@@ -1,0 +1,1 @@
+> npx create-react-app iPractice-React-MSAL --template typescript --use-npm
