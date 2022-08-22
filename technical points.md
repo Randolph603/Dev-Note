@@ -25,3 +25,8 @@ Small utility to reset test databases to clean state. C# based and mainly focus 
 ## React V.18
 [What's New](https://blog.appsignal.com/2022/04/13/whats-new-in-react-18.html)
 
+## Webpack vs Vite
+
+## react-app-rewired
+
+
