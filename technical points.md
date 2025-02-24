@@ -30,3 +30,26 @@ Small utility to reset test databases to clean state. C# based and mainly focus 
 ## react-app-rewired
 
 ## ngrok (ngrok is a free service that helps you share a site or server running on your local machine.)
+
+## controller-based APIs VS minimal APIs
+### controller-based 
+Structure and Organization: Controllers offer a clear structure, separating concerns and enhancing maintainability.
+Flexibility: They enable custom routes, complex request handling, and support various HTTP verbs.
+Testing: Controllers facilitate unit testing of individual actions, promoting a test-driven approach.
+
+### minimal (Concise and Swift)
+Simplicity: Minimal APIs drastically reduce code complexity, ideal for smaller projects or rapid prototyping.
+Ease of Use: They enable quick API creation with fewer dependencies, accelerating development cycles.
+Potential Performance Boost: The reduced overhead might lead to improved performance, especially in smaller applications.
+
+[Microsoft Docs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/apis?view=aspnetcore-9.0) : 
+
+> Minimal APIs have many of the same capabilities as controller-based APIs. They support the configuration and customization needed to scale to multiple APIs, handle complex routes, apply authorization rules, and control the content of API responses. There are a few capabilities available with controller-based APIs that are not yet supported or implemented by minimal APIs. These include:
+
+- No built-in support for model binding (IModelBinderProvider, IModelBinder). 
+- Support can be added with a custom binding shim.
+- No built-in support for validation (IModelValidator).
+- No support for application parts or the application model. There's no way to apply or build your own conventions.
+- No built-in view rendering support. We recommend using Razor Pages for rendering views.
+- No support for JsonPatch
+- No support for OData
