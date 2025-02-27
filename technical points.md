@@ -53,3 +53,13 @@ Potential Performance Boost: The reduced overhead might lead to improved perform
 - No built-in view rendering support. We recommend using Razor Pages for rendering views.
 - No support for JsonPatch
 - No support for OData
+
+## EF Conventions VS Data Annotations VS Fluent API in OnModelCreating
+
+> You can also apply certain attributes (known as Data Annotations) to your classes and properties. Data annotations will override conventions, but will be overridden by Fluent API configuration.
+
+- Grouping configuration
+- Applying all configurations in an assembly
+- Using EntityTypeConfigurationAttribute on entity types
+
+[More Details](https://learn.microsoft.com/en-us/ef/core/modeling/)
