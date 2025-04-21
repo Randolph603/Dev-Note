@@ -6,7 +6,7 @@ LastPass
 Azure VPN Client
 Download Company Portal on Microsoft Store
 https://apps.foundry.io/anvil/index.html
-https://apps-staging.foundry.io/anvil-staging/index.html
+https://apps.staging.foundry.io/anvil-staging/index.html
 
 
 
