@@ -63,6 +63,18 @@ Cloudbase Open API allows developers to invoke CloudBase services as an administ
 
 Documentation: [Cloudbase Open API](https://docs.cloudbase.net/api-reference/openapi/introduction)
 
+Some key endpoints of API that relative to login and credentials
+
+1. code2Session 小程序登录
+https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/user-login/code2Session.html
+
+2. getAccessToken 获取接口调用凭据
+https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/mp-access-token/getAccessToken.html
+
+3. getStableAccessToken 获取稳定版接口调用凭据
+https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/mp-access-token/getStableAccessToken.html
+
+
 ## Wechat App (Oversea Development)
 
 Due to policy of Wechat Mini Programs oversea, wechat app SDK could not be used directly. The only way to implment is Web SDK @cloudbase/js-sdk. 
@@ -127,4 +139,13 @@ import adapter from "cloudbase-adapter-wx_mp";
         });
     }); 
 ```
+
+Reference: https://developers.weixin.qq.com/community/minihome/doc/000466e59bcde86d60ff56a195b000
+
+> **Problem** \
+> Problem that the appAccessKey is not safe to store from front end of wechat mini app client side.
+>
+> 1. Create a mini api or 
+> 2. use Cloud Function (HTTP request without permission) or 
+> 3. Something like KeyValues
 
