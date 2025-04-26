@@ -80,7 +80,7 @@ https://developers.weixin.qq.com/miniprogram/dev/OpenApiDoc/mp-access-token/getS
 Due to policy of Wechat Mini Programs oversea, wechat app SDK could not be used directly. The only way to implment is Web SDK @cloudbase/js-sdk. 
 
 And here need to introduce another lib 
-**cloudbase-adapter-wx_mp**. It is an adapter provided by Tencent CloudBase (TCB) for integrating the CloudBase JavaScript SDK (@cloudbase/js-sdk) with WeChat Mini Programs. It allows developers to use the CloudBase Web SDK in the WeChat Mini Program environment by bridging compatibility issues between the two platforms.
+**@cloudbase/adapter-wx_mp**. It is an adapter provided by Tencent CloudBase (TCB) for integrating the CloudBase JavaScript SDK (@cloudbase/js-sdk) with WeChat Mini Programs. It allows developers to use the CloudBase Web SDK in the WeChat Mini Program environment by bridging compatibility issues between the two platforms.
 
 
 >🔑 Key Features:
@@ -92,7 +92,7 @@ Usage Example from offical:
 
 ``` js
 import cloudbase from '@cloudbase/js-sdk';
-import wx_mp from 'cloudbase-adapter-wx_mp';
+import adapter from "@cloudbase/adapter-wx_mp";
 
 // Initialize the adapter
 cloudbase.useAdapters(wx_mp);
@@ -113,7 +113,7 @@ Best Practice from usage
 
 ``` js
 import cloudbase from "@cloudbase/js-sdk"
-import adapter from "cloudbase-adapter-wx_mp";
+import adapter from "@cloudbase/adapter-wx_mp";
 
 ...
 
@@ -139,6 +139,9 @@ import adapter from "cloudbase-adapter-wx_mp";
         });
     }); 
 ```
+
+This article descript the multiple env (跨端开发) in details
+https://docs.cloudbase.net/api-reference/webv3/adapter
 
 Reference: https://developers.weixin.qq.com/community/minihome/doc/000466e59bcde86d60ff56a195b000
 
